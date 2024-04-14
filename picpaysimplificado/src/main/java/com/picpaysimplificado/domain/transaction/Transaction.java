@@ -1,11 +1,11 @@
     package com.picpaysimplificado.domain.transaction;
 
-import com.picpaysimplificado.domain.user.User;
-import jakarta.persistence.*;
-import lombok.*;
+    import com.picpaysimplificado.domain.user.User;
+    import jakarta.persistence.*;
+    import lombok.*;
 
-import java.math.BigDecimal;
-import java.time.LocalTime;
+    import java.math.BigDecimal;
+    import java.time.LocalDateTime;
 
 @Entity(name = "transactions")
 @Table(name = "transactions")
@@ -29,6 +29,6 @@ public class Transaction {
     @JoinColumn(name="receiver_id")
     private User receiver;
 
-    private LocalTime timeStamp;
+    private LocalDateTime timestamp;
 
 }
