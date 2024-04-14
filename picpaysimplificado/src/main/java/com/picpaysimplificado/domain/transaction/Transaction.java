@@ -1,11 +1,10 @@
-package com.picpaysimplificado.domain.user.transaction;
+    package com.picpaysimplificado.domain.transaction;
 
 import com.picpaysimplificado.domain.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.time.LocalTime;
 
 @Entity(name = "transactions")
